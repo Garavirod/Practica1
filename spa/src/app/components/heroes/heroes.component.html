@@ -1,0 +1,7 @@
+<h1>Heroes <small>Marvel y DC</small></h1>
+<div class="card-columns">
+    <!-- *ngFor="let heroe of heroes; let i = index" -->
+    <!-- Ponemos a la escucha al apdre que recibira un evento de tipo 'heroeSeleccionado' y ese evento ejecutara la funcion verHeroe -->
+    <!-- $event es el parametro que manda el hijo, este caso el componente de hero-card -->
+    <app-hero-card (heroeSeleccionado)="verHeroe($event)" [heroe]="foo" [idx]="i" *ngFor="let foo of heroes; let i = index"></app-hero-card>
+</div>

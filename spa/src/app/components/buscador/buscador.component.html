@@ -1,0 +1,11 @@
+<h1>Resultados para : <small>{{termino}}</small></h1>
+<div class="row" *ngIf="result == 0">
+    <div class="col alert">
+        NO HAY RESULTADOS PARA {{termino}}
+    </div>
+</div>
+<div class="card-columns" *ngIf="result != 0">
+    <!-- La varibale idx, heroe es la que se comparte desde el componente -->
+    <!-- La varibale fuera de los [] es la que el padre les pasa desde afuera, la del for-->
+    <app-hero-card [heroe]="foo" [idx]="foo.idx" *ngFor="let foo of heroes;"></app-hero-card>
+</div>
