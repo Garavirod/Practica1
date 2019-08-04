@@ -1,1 +1,5 @@
-<p>portafolio works!</p>
+<app-header bg='portfolio-bg.jpg' title='Portafolio de proyectos' subtitle='currículum'>
+</app-header>
+<div class="container">
+    <app-project [project]='p' *ngFor="let p of porjects;"></app-project>
+</div>

@@ -12,7 +12,7 @@ export class HeroCardComponent implements OnInit {
   // El Input es una propiead que será recibida desde afuera
 
   //LA propiedad heore puede venir de afuera, de lo contrario lo inicalizo en el constructor
-  @Input() heroe: any ={}; 
+  @Input() heroe: any = {}; 
   @Input() idx: number;
   // Va a emitir un obj/array/atring etc
   @Output() heroeSeleccionado: EventEmitter<number>;
